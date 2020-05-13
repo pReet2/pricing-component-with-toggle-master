@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+      
+  </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <main>
+    <div id = "img-top"></div>
+    <h2 id="main-title">Our Pricing</h2><br><br>
+    <div class="option">
+    <h4 class="timeStamp">Annually</h4>
+    <label class="switch">
+  <input type="checkbox" id="toggleSwitch">
+  <span class="slider round"></span>
+</label>
+    <h4 class="timeStamp">Monthly</h4><br><br><br>
+    </div>
+    
+<div class="card-0">
+<div class="card-1">
+    <p class="title"> Basic</p>
+    <div class="price">
+    <h5>$</h5>&nbsp;<h1 id = "basic-price">199.99</h1>
+    </div>
+    <div class ="line"></div>
+    <p>500 GB Storage</p>
+    <div class ="line"></div>
+    <p>2 Users Allowed</p>
+    <div class="line"></div>
+    <p>Send up to 3 GB</p>
+     <div class="line"></div>
+    <p class="more">Learn More</p><br><br>
+    </div>
+    
+    
+<div class="card-1 card-professional">    
+    <p class="title">Professional</p> 
+    <div class="price">
+    <h5>$</h5>&nbsp;<h1 id="professional-price">249.99</h1>
+    </div>
+    <div class ="line1"></div>
+    <p> 1 TB Storage</p>
+    <div class ="line1"></div>
+    <p> 5 Users Allowed</p>
+    <div class ="line1"></div>
+    <p>Send up to 10 GB</p>
+    <div class ="line1"></div>
+    <p class="more">Learn More</p><br>
+    </div><br>
+    
+<div class="card-1 card-master">
+    <p class="title">Master</p>
+    <div class="price">
+   <h5>$</h5>&nbsp;<h1 id = 'master-price'>399.99</h1>
+    </div>
+    <div class="line"></div>
+    <p>2 TB Storage</p>
+    <div class="line"></div>
+    <p>10 Users Allowed</p>
+    <div class ="line"></div>
+    <p>Send up to 20 GB</p>
+    <div class ="line"></div>
+    <p class="more">Learn More</p><br>
+    </div><br>
+    </div><br><br>
+    <div id="img-bottom"></div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Preeti Gupta</a>.
+  </div>
+    </main>
+</body>
+
+    <script>
+
+    var input = document.getElementById('toggleSwitch');
+
+    input.addEventListener('change',function(){
+        if(this.checked) {
+          document.getElementById("basic-price").innerHTML = "19.99";
+          document.getElementById("professional-price").innerHTML = "24.99";
+          document.getElementById("master-price").innerHTML = "39.99";
+        } else {
+          document.getElementById("basic-price").innerHTML = "199.99";
+          document.getElementById("professional-price").innerHTML = "249.99";
+          document.getElementById("master-price").innerHTML = "399.99";
+        }
+    });
+
+    </script>
+
+</html>
